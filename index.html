@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Priyanshi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+      box-sizing: border-box;
+    }
+    .container {
+      padding: 1rem;
+      animation: fadeIn 2s ease-in-out;
+      max-width: 100vw;
+      max-height: 100vh;
+      overflow: auto;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: #e91e63;
+      text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff66cc, 0 0 30px #ff33cc;
+      animation: glow 2s ease-in-out infinite alternate, bounce 2s infinite;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #ff99cc; }
+      to { text-shadow: 0 0 20px #ff66cc, 0 0 30px #ff33cc; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .image-section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 100vw;
+      margin-top: 1rem;
+    }
+    .image-section img {
+      width: 150px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+      animation: butterflyOpen 2s ease-in-out;
+    }
+    @keyframes butterflyOpen {
+      0% {
+        transform: scale(0.5) rotateY(180deg);
+        opacity: 0;
+      }
+      50% {
+        transform: scale(1.1) rotateY(90deg);
+        opacity: 0.5;
+      }
+      100% {
+        transform: scale(1) rotateY(0);
+        opacity: 1;
+      }
+    }
+    .image-section img:hover {
+      transform: scale(1.05) rotate(1deg);
+    }
+    .message, .suggestion {
+      font-size: 1rem;
+      margin: 1rem auto;
+      background-color: #fff5e6;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      max-width: 95%;
+    }
+    footer {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .balloon {
+      position: absolute;
+      width: 40px;
+      height: 60px;
+      background: radial-gradient(circle at 30% 30%, #ff69b4, #ff1493);
+      border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+      animation: float 10s linear infinite;
+      z-index: -1;
+    }
+    .balloon:after {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      left: 50%;
+      width: 2px;
+      height: 20px;
+      background: #888;
+    }
+    @keyframes float {
+      0% { transform: translateY(100vh) translateX(0); opacity: 0; }
+      10% { opacity: 1; }
+      100% { transform: translateY(-100vh) translateX(10px); opacity: 0; }
+    }
+    .confetti {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .confetti div {
+      width: 10px;
+      height: 10px;
+      background-color: #ff69b4;
+      position: absolute;
+      animation: confetti-fall 5s linear infinite;
+    }
+    @keyframes confetti-fall {
+      0% { transform: translateY(0) rotate(0); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+  <script>
+    alert("🎁 Surprise! Ready to celebrate Priyanshi's special day?");
+  </script>
+
+  <div class="balloon" style="left: 10%; animation-delay: 0s;"></div>
+  <div class="balloon" style="left: 90%; animation-delay: 3s;"></div>
+  <div class="balloon" style="left: 20%; animation-delay: 6s;"></div>
+  <div class="balloon" style="left: 80%; animation-delay: 9s;"></div>
+  <div class="balloon" style="left: 15%; animation-delay: 12s;"></div>
+
+  <div class="confetti">
+    <div style="left:5%; animation-delay:0s;"></div>
+    <div style="left:20%; animation-delay:1s;"></div>
+    <div style="left:40%; animation-delay:2s;"></div>
+    <div style="left:60%; animation-delay:3s;"></div>
+    <div style="left:80%; animation-delay:4s;"></div>
+  </div>
+
+  <audio autoplay loop>
+    <source src="happy-birthday-357371.mp3" type="audio/mp3">
+    <!-- Your browser does not support the audio element. -->
+  </audio>
+
+  <div class="container">
+    <h1>🎉 Happy Birthday Priyanshi! 🎂</h1>
+    <div class="image-section">
+      <img src="img1.jpg" alt="img1">
+      <img src="img2.jpg" alt="img2">
+      <img src="img3.jpg" alt="img3">
+      <img src="img4.jpg" alt="img4">
+      <img src="img5.jpg" alt="img5">
+      <img src="img6.jpg" alt="img6">
+      <img src="img7.jpg" alt="img7">
+      <img src="img8.jpg" alt="img8">
+    </div>
+    <div class="message">
+      <p>Wishing you all the joy, laughter, and love on your special day. 🥳 You are my bestie forever. 💖 May your birthday be filled with endless moments of happiness and success!</p>
+    </div>
+    <div class="suggestion">
+      <p>“Your smile brings happiness, your laughter spreads joy. Keep shining always! 🌟”</p>
+    </div>
+    <footer>
+      <p>Created with ❤️ by your best friend</p>
+    </footer>
+  </div>
+</body>
+</html>
